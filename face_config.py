@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 from pprint import pprint
 import cognitive_face as CF
 
-KEY = '5d2f03e34f454a91ba2cce29492bbc60'  # Replace with a valid subscription key (keeping the quotes in place).
+KEY = ''  # Replace with a valid subscription key (keeping the quotes in place).
 CF.Key.set(KEY)
 
 BASE_URL = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0'  # Replace with your regional Base URL
