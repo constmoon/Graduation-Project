@@ -18,9 +18,7 @@ ss = cv2.ximgproc.segmentation.createSelectiveSearchSegmentation()
 # set input image on which we will run segmentation
 ss.setBaseImage(im)
 
-ss.switchToSelectiveSearchFast()    # 빠른 속도 보장
-#ss.switchToSelectiveSearchQuality()
-
+ss.switchToSelectiveSearchFast()
 
 # run selective search segmentation on input image
 rects = ss.process()
@@ -30,7 +28,7 @@ print('Total Number of Region Proposals: {}'.format(len(rects)))
 numShowRects = 100
 # increment to increase/decrease total number
 # of reason proposals to be shown
-increment = 50
+increment = 10
 
 cv2.imshow("Output", im)
 while True:
